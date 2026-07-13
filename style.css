@@ -191,11 +191,19 @@ nav ul li a:hover{ color: var(--teal-dark); }
 /* ---------- about ---------- */
 #about{ padding: 88px 0; }
 
+.about-text{
+  column-count: 2;
+  column-gap: 48px;
+}
 .about-text p{
   color: var(--ink-soft);
   font-size: 16.5px;
   margin-bottom: 18px;
-  max-width: 640px;
+  break-inside: avoid;
+}
+
+@media (max-width: 700px){
+  .about-text{ column-count: 1; }
 }
 
 /* ---------- experience ---------- */
