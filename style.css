@@ -296,6 +296,7 @@ nav ul li a:hover{ color: var(--teal-dark); }
 }
 
 .project-card{
+  display: block;
   background: var(--panel);
   border: 1px solid var(--line);
   border-radius: var(--radius);
