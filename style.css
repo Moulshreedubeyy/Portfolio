@@ -191,35 +191,12 @@ nav ul li a:hover{ color: var(--teal-dark); }
 /* ---------- about ---------- */
 #about{ padding: 88px 0; }
 
-.about-grid{
-  display:grid;
-  grid-template-columns: 1.4fr 1fr;
-  gap: 56px;
-}
-
 .about-text p{
   color: var(--ink-soft);
   font-size: 16.5px;
   margin-bottom: 18px;
-  max-width: 540px;
+  max-width: 640px;
 }
-
-.about-facts{
-  display:flex;
-  flex-direction: column;
-  gap: 18px;
-  border-left: 2px solid var(--line);
-  padding-left: 24px;
-}
-.fact{ display:flex; flex-direction: column; gap: 4px; }
-.fact-label{
-  font-family: var(--font-mono);
-  font-size: 11.5px;
-  text-transform: uppercase;
-  letter-spacing: 0.04em;
-  color: var(--teal);
-}
-.fact-value{ font-size: 14.5px; font-weight: 500; }
 
 /* ---------- experience ---------- */
 #experience{ padding: 88px 0; background: var(--panel); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
@@ -333,29 +310,6 @@ nav ul li a:hover{ color: var(--teal-dark); }
 .project-card h3{ font-size: 18px; margin-bottom: 10px; }
 .project-card p{ font-size: 14.5px; color: var(--ink-soft); }
 
-/* ---------- skills ---------- */
-#skills{ padding: 88px 0; background: var(--panel); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
-
-.skills-grid{
-  display:grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 40px;
-}
-
-.skill-group h4{ font-size: 15px; margin-bottom: 16px; color: var(--teal-dark); }
-
-.tag-cloud{ display:flex; flex-wrap: wrap; gap: 10px; }
-
-.tag{
-  font-size: 13.5px;
-  font-family: var(--font-mono);
-  padding: 7px 12px;
-  border: 1px solid var(--line);
-  border-radius: 20px;
-  color: var(--ink-soft);
-  background: var(--paper);
-}
-
 /* ---------- education ---------- */
 #education{ padding: 72px 0; }
 
@@ -424,11 +378,8 @@ nav ul li a:hover{ color: var(--teal-dark); }
 @media (max-width: 860px){
   nav ul{ gap: 18px; flex-wrap: wrap; }
   .kpi-row{ grid-template-columns: repeat(2, 1fr); }
-  .about-grid{ grid-template-columns: 1fr; }
-  .about-facts{ border-left: none; padding-left: 0; border-top: 2px solid var(--line); padding-top: 20px; }
   .timeline-item{ grid-template-columns: 1fr; }
   .course-grid, .project-grid, .contact-grid{ grid-template-columns: 1fr; }
-  .skills-grid{ grid-template-columns: 1fr; }
 }
 
 @media (prefers-reduced-motion: reduce){
